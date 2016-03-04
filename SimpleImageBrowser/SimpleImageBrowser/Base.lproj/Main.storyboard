@@ -33,6 +33,9 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                 <state key="normal" title="⬅︎"/>
+                                <connections>
+                                    <action selector="leftBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ha3-JQ-jlk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wft-5n-q7T">
                                 <rect key="frame" x="269" y="133" width="50" height="50"/>
@@ -40,8 +43,11 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="➜"/>
+                                <connections>
+                                    <action selector="rightBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsA-G7-UEj"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三个小黄人~~~" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YQo-Co-x4Q" userLabel="Desc Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三个小黄人~~~" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="YQo-Co-x4Q" userLabel="Desc Label">
                                 <rect key="frame" x="0.0" y="307" width="320" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -55,6 +61,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="descLabel" destination="YQo-Co-x4Q" id="EzO-0q-wsn"/>
+                        <outlet property="imageView" destination="2uS-Ar-HNK" id="OcY-Rn-8o0"/>
+                        <outlet property="leftBtn" destination="dC7-AK-8sU" id="vAw-d4-fp5"/>
+                        <outlet property="rightBtn" destination="Wft-5n-q7T" id="Qdu-KC-bLT"/>
+                        <outlet property="topLabel" destination="OH7-rV-Knn" id="iEM-PE-DG5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
